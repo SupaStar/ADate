@@ -9,4 +9,5 @@ target 'ADate' do
     pod 'Alamofire'
     pod 'FloatingLabelTextFieldSwiftUI'
     pod 'GoogleSignIn'
+
 end

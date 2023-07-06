@@ -7,16 +7,17 @@
 
 import SwiftUI
 import FloatingLabelTextFieldSwiftUI
-import Firebase
 
 struct LoginView: View {
     // MARK: PROPERTY
     @State private var email: String = ""
     @State private var password: String = ""
-    @State private var isShowPassword: Bool = false
+    @State private var isHidePassword: Bool = true
+    
     var body: some View {
 
         ZStack{
+            Color("Background")
             VStack(spacing:20) {
                 // MARK: Header
                 ZStack {
@@ -53,21 +54,21 @@ struct LoginView: View {
                     ZStack(alignment:.trailing){
                         
                         FloatingLabelTextField($password,placeholder: "Contraseña")
-                        .isSecureTextEntry(isShowPassword)
+                        .isSecureTextEntry(isHidePassword)
                         .padding(.leading,30)
                         .padding(.trailing,30)
                         
-                        Image(systemName: isShowPassword ? "eye.fill" : "eye.slash.fill")
+                        Image(systemName: isHidePassword ? "eye.slash.fill":"eye.fill")
                             .font(.system(.caption))
                             .scaledToFill()
                             .foregroundColor(.black)
                             .padding(.trailing,80)
                             .offset(y:10)
                             .onTapGesture {
-                                if isShowPassword {
-                                    isShowPassword = false
+                                if isHidePassword {
+                                    isHidePassword = false
                                 } else {
-                                    isShowPassword = true
+                                    isHidePassword = true
                                 }
                             }
                             .frame(width: 10, height: 10)
@@ -110,8 +111,6 @@ struct LoginView: View {
                         Button(action:{
                             
                         }){
-//                            Image("GoogleG")
-//                                .resizable()
                             HStack{
                                 Image("GoogleG")
                                     .resizable()
@@ -127,11 +126,10 @@ struct LoginView: View {
                                     .frame(width: 240,height: 20)
                                     .padding()
                                     .padding(.leading,-60)
-                                    
+
                             }.overlay(
                                 RoundedRectangle(cornerRadius: 20).stroke( Color.black,lineWidth:1)
                             )
-                            
                         }
                     
                 }//: VSTACK
