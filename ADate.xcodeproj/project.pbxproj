@@ -7,18 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		094C0CF62A562E8E00E06FD8 /* FloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C0CF52A562E8E00E06FD8 /* FloatingTextField.swift */; };
+		094C0CF82A563B4E00E06FD8 /* ThemeTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C0CF72A563B4E00E06FD8 /* ThemeTextFieldStyle.swift */; };
+		094C0CFB2A566B0500E06FD8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 094C0CFA2A566B0500E06FD8 /* FirebaseAuth */; };
+		094C0CFD2A566C5400E06FD8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094C0CFC2A566C5300E06FD8 /* GoogleService-Info.plist */; };
+		094C0CFF2A566CB900E06FD8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C0CFE2A566CB900E06FD8 /* LoginView.swift */; };
 		09C420962A561AF5007624FA /* ADateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C420952A561AF5007624FA /* ADateApp.swift */; };
 		09C420982A561AF5007624FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C420972A561AF5007624FA /* ContentView.swift */; };
 		09C4209A2A561AF6007624FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C420992A561AF6007624FA /* Assets.xcassets */; };
 		09C4209D2A561AF6007624FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C4209C2A561AF6007624FA /* Preview Assets.xcassets */; };
+		AFF30C611D88A77F3A105684 /* Pods_ADate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E76F38F2073BEFF710C27CE /* Pods_ADate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		094C0CF52A562E8E00E06FD8 /* FloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextField.swift; sourceTree = "<group>"; };
+		094C0CF72A563B4E00E06FD8 /* ThemeTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTextFieldStyle.swift; sourceTree = "<group>"; };
+		094C0CFC2A566C5300E06FD8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		094C0CFE2A566CB900E06FD8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		09C420922A561AF5007624FA /* ADate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C420952A561AF5007624FA /* ADateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADateApp.swift; sourceTree = "<group>"; };
 		09C420972A561AF5007624FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		09C420992A561AF6007624FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09C4209C2A561AF6007624FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3E76F38F2073BEFF710C27CE /* Pods_ADate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D3CE7CE3BCE8F6C54AC7E07 /* Pods-ADate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADate.release.xcconfig"; path = "Target Support Files/Pods-ADate/Pods-ADate.release.xcconfig"; sourceTree = "<group>"; };
+		F5F8392FDCDF03B91F93F725 /* Pods-ADate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADate.debug.xcconfig"; path = "Target Support Files/Pods-ADate/Pods-ADate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +39,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF30C611D88A77F3A105684 /* Pods_ADate.framework in Frameworks */,
+				094C0CFB2A566B0500E06FD8 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		094C0CF42A562E4600E06FD8 /* Custom Elements */ = {
+			isa = PBXGroup;
+			children = (
+				094C0CF52A562E8E00E06FD8 /* FloatingTextField.swift */,
+				094C0CF72A563B4E00E06FD8 /* ThemeTextFieldStyle.swift */,
+			);
+			path = "Custom Elements";
+			sourceTree = "<group>";
+		};
 		09C420892A561AF5007624FA = {
 			isa = PBXGroup;
 			children = (
 				09C420942A561AF5007624FA /* ADate */,
 				09C420932A561AF5007624FA /* Products */,
+				6070BD7E05E14CD4A4686D5D /* Pods */,
+				749EB9C3701EE7847F059DE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +77,12 @@
 		09C420942A561AF5007624FA /* ADate */ = {
 			isa = PBXGroup;
 			children = (
+				094C0CF42A562E4600E06FD8 /* Custom Elements */,
+				09C420A52A5624E9007624FA /* Views */,
+				09C420A42A5624DC007624FA /* Utilities */,
+				09C420A32A5624D1007624FA /* Screens */,
 				09C420952A561AF5007624FA /* ADateApp.swift */,
-				09C420972A561AF5007624FA /* ContentView.swift */,
+				094C0CFC2A566C5300E06FD8 /* GoogleService-Info.plist */,
 				09C420992A561AF6007624FA /* Assets.xcassets */,
 				09C4209B2A561AF6007624FA /* Preview Content */,
 			);
@@ -67,6 +97,46 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		09C420A32A5624D1007624FA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				09C420972A561AF5007624FA /* ContentView.swift */,
+				094C0CFE2A566CB900E06FD8 /* LoginView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		09C420A42A5624DC007624FA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		09C420A52A5624E9007624FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6070BD7E05E14CD4A4686D5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5F8392FDCDF03B91F93F725 /* Pods-ADate.debug.xcconfig */,
+				8D3CE7CE3BCE8F6C54AC7E07 /* Pods-ADate.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		749EB9C3701EE7847F059DE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E76F38F2073BEFF710C27CE /* Pods_ADate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +144,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09C420A02A561AF6007624FA /* Build configuration list for PBXNativeTarget "ADate" */;
 			buildPhases = (
+				45CA8C6A8DDA2B57F7E57B97 /* [CP] Check Pods Manifest.lock */,
 				09C4208E2A561AF5007624FA /* Sources */,
 				09C4208F2A561AF5007624FA /* Frameworks */,
 				09C420902A561AF5007624FA /* Resources */,
+				A614FF4536E7F4E1791F2634 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ADate;
+			packageProductDependencies = (
+				094C0CFA2A566B0500E06FD8 /* FirebaseAuth */,
+			);
 			productName = ADate;
 			productReference = 09C420922A561AF5007624FA /* ADate.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +186,9 @@
 				Base,
 			);
 			mainGroup = 09C420892A561AF5007624FA;
+			packageReferences = (
+				094C0CF92A566B0500E06FD8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 09C420932A561AF5007624FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,10 +205,53 @@
 			files = (
 				09C4209D2A561AF6007624FA /* Preview Assets.xcassets in Resources */,
 				09C4209A2A561AF6007624FA /* Assets.xcassets in Resources */,
+				094C0CFD2A566C5400E06FD8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45CA8C6A8DDA2B57F7E57B97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ADate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A614FF4536E7F4E1791F2634 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ADate/Pods-ADate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ADate/Pods-ADate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADate/Pods-ADate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		09C4208E2A561AF5007624FA /* Sources */ = {
@@ -138,6 +259,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				09C420982A561AF5007624FA /* ContentView.swift in Sources */,
+				094C0CF82A563B4E00E06FD8 /* ThemeTextFieldStyle.swift in Sources */,
+				094C0CF62A562E8E00E06FD8 /* FloatingTextField.swift in Sources */,
+				094C0CFF2A566CB900E06FD8 /* LoginView.swift in Sources */,
 				09C420962A561AF5007624FA /* ADateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +385,7 @@
 		};
 		09C420A12A561AF6007624FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5F8392FDCDF03B91F93F725 /* Pods-ADate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -273,8 +398,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,6 +414,7 @@
 		};
 		09C420A22A561AF6007624FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D3CE7CE3BCE8F6C54AC7E07 /* Pods-ADate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,8 +427,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +463,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		094C0CF92A566B0500E06FD8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 10.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		094C0CFA2A566B0500E06FD8 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 094C0CF92A566B0500E06FD8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 09C4208A2A561AF5007624FA /* Project object */;
 }
