@@ -15,7 +15,7 @@ struct LoginView: View {
     @State private var isHidePassword: Bool = true
     
     var body: some View {
-
+        
         ZStack{
             Color("Background")
             VStack(spacing:20) {
@@ -42,44 +42,49 @@ struct LoginView: View {
                     Text("Iniciar sesión")
                         .font(.system(.title2))
                         .padding(.top,20)
+                    FloatTextFieldView(placeHolder: "ejemplo@ejemplo.com",
+                                       text: $email,
+                                       title: "Correo electronico",
+                                       errorMsg: nil)
+                    .padding()
                     
-                    FloatingLabelTextField($email, placeholder: "ejemplo@ejemplo.com", editingChanged: { (isChanged) in
-                               
-                           }) {
-                               
-                           }
-                           .padding(.leading,30)
-                           .padding(.trailing,30)
+                    //                    FloatingLabelTextField($email, placeholder: "ejemplo@ejemplo.com", editingChanged: { (isChanged) in
+                    //
+                    //                           }) {
+                    //
+                    //                           }
+                    //                           .padding(.leading,30)
+                    //                           .padding(.trailing,30)
                     
                     ZStack(alignment:.trailing){
-                        
-                        FloatingLabelTextField($password,placeholder: "Contraseña")
-                        .isSecureTextEntry(isHidePassword)
-                        .padding(.leading,30)
-                        .padding(.trailing,30)
+                        FloatTextFieldView(placeHolder: "contraseña",
+                                           text: $password,
+                                           title: "Contraseña",
+                                           errorMsg: nil)
+                        .padding()
+//                        FloatingLabelTextField($password,placeholder: "Contraseña")
+//                            .isSecureTextEntry(isHidePassword)
+//                            .padding(.leading,30)
+//                            .padding(.trailing,30)
                         
                         Image(systemName: isHidePassword ? "eye.slash.fill":"eye.fill")
                             .font(.system(.caption))
                             .scaledToFill()
                             .foregroundColor(.black)
                             .padding(.trailing,80)
-                            .offset(y:10)
+                            .offset(y:0)
                             .onTapGesture {
-                                if isHidePassword {
-                                    isHidePassword = false
-                                } else {
-                                    isHidePassword = true
-                                }
+                                isHidePassword.toggle()
                             }
                             .frame(width: 10, height: 10)
                     }//: ZSTACK
-                        Button(action:{
-                            
-                        }){
-                            Text("¿Contraseña olvidada?")
-                                .font(.system(size: 14))
-                                .foregroundColor(Color("SecondaryText"))
-                        }.padding(.leading,180)
+                    Button(action:{
+                        
+                    }){
+                        Text("¿Contraseña olvidada?")
+                            .font(.system(size: 14))
+                            .foregroundColor(Color("SecondaryText"))
+                    }.padding(.leading,180)
                 }//: VSTACK
                 .padding(.top, 60.0)
                 // MARK: Footer
@@ -87,13 +92,7 @@ struct LoginView: View {
                     Button(action: {
                         // Acción del botón
                     }) {
-                        Text("Entrar")
-                            .foregroundColor(.black)
-                            .font(.title3)
-                            .frame(width: 240, height: 30)
-                            .padding()
-                            .background(Color("Primary"))
-                            .cornerRadius(4)
+                        ButtonView(text: "Entrar")
                     }
                     HStack{
                         Text("¿Aun no tienes cuenta?")
@@ -107,41 +106,42 @@ struct LoginView: View {
                     .padding(.top,30)
                 }//: VSTACK
                 VStack{
+                    
+                    Button(action:{
                         
-                        Button(action:{
+                    }){
+                        HStack{
+                            Image("GoogleG")
+                                .resizable()
+                                .scaledToFit()
+                                .padding()
+                                .padding(
+                                    .leading, 5
+                                )
+                                .frame(width:70)
+                            Text("Iniciar Sesion")
+                                .foregroundColor(.black)
+                                .font(.title3)
+                                .frame(width: 240,height: 20)
+                                .padding()
+                                .padding(.leading,-60)
                             
-                        }){
-                            HStack{
-                                Image("GoogleG")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .padding()
-                                    .padding(
-                                        .leading, 5
-                                    )
-                                    .frame(width:70)
-                                Text("Iniciar Sesion")
-                                    .foregroundColor(.black)
-                                    .font(.title3)
-                                    .frame(width: 240,height: 20)
-                                    .padding()
-                                    .padding(.leading,-60)
-
-                            }.overlay(
-                                RoundedRectangle(cornerRadius: 20).stroke( Color.black,lineWidth:1)
-                            )
-                        }
+                        }.overlay(
+                            RoundedRectangle(cornerRadius: 20).stroke( Color.black,lineWidth:1)
+                        )
+                    }
                     
                 }//: VSTACK
                 .padding(.top, 10)
             }//: VSTACK
         }//: ZSTACK
-//        .ignoresSafeArea(.all)
+        //        .ignoresSafeArea(.all)
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
+            .preferredColorScheme(.dark)
     }
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		092ABAE82A5697AD008A7A92 /* ADateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092ABAE72A5697AD008A7A92 /* ADateTests.swift */; };
+		092ABAEF2A577877008A7A92 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092ABAEE2A577877008A7A92 /* ColorExtension.swift */; };
+		092ABAF22A577970008A7A92 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092ABAF12A577970008A7A92 /* ButtonView.swift */; };
+		092ABAF42A577AEE008A7A92 /* FloatTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092ABAF32A577AEE008A7A92 /* FloatTextFieldView.swift */; };
 		094C0CFB2A566B0500E06FD8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 094C0CFA2A566B0500E06FD8 /* FirebaseAuth */; };
 		094C0CFD2A566C5400E06FD8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 094C0CFC2A566C5300E06FD8 /* GoogleService-Info.plist */; };
 		094C0CFF2A566CB900E06FD8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C0CFE2A566CB900E06FD8 /* LoginView.swift */; };
@@ -17,7 +21,22 @@
 		65E9211AAFAE3BE2E433D670 /* Pods_ADate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1E306149494B9D318C1993 /* Pods_ADate.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		092ABAE92A5697AD008A7A92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09C4208A2A561AF5007624FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09C420912A561AF5007624FA;
+			remoteInfo = ADate;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		092ABAE52A5697AD008A7A92 /* ADateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ADateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		092ABAE72A5697AD008A7A92 /* ADateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADateTests.swift; sourceTree = "<group>"; };
+		092ABAEE2A577877008A7A92 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		092ABAF12A577970008A7A92 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		092ABAF32A577AEE008A7A92 /* FloatTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatTextFieldView.swift; sourceTree = "<group>"; };
 		094C0CFC2A566C5300E06FD8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		094C0CFE2A566CB900E06FD8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		094C0D032A566F6500E06FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +51,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		092ABAE22A5697AD008A7A92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		09C4208F2A561AF5007624FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,6 +70,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		092ABAE62A5697AD008A7A92 /* ADateTests */ = {
+			isa = PBXGroup;
+			children = (
+				092ABAE72A5697AD008A7A92 /* ADateTests.swift */,
+			);
+			path = ADateTests;
+			sourceTree = "<group>";
+		};
+		092ABAF02A577946008A7A92 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				092ABAF12A577970008A7A92 /* ButtonView.swift */,
+				092ABAF32A577AEE008A7A92 /* FloatTextFieldView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		094C0CF42A562E4600E06FD8 /* Custom Elements */ = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +97,7 @@
 		094C0D002A566EA400E06FD8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				092ABAEE2A577877008A7A92 /* ColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -76,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				09C420942A561AF5007624FA /* ADate */,
+				092ABAE62A5697AD008A7A92 /* ADateTests */,
 				09C420932A561AF5007624FA /* Products */,
 				6070BD7E05E14CD4A4686D5D /* Pods */,
 				4C37E45BFC6B439D1BD702A2 /* Frameworks */,
@@ -86,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				09C420922A561AF5007624FA /* ADate.app */,
+				092ABAE52A5697AD008A7A92 /* ADateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,9 +139,9 @@
 		09C420942A561AF5007624FA /* ADate */ = {
 			isa = PBXGroup;
 			children = (
+				092ABAF02A577946008A7A92 /* Component */,
 				094C0D052A566FCE00E06FD8 /* Enum */,
 				094C0D042A566FC300E06FD8 /* ViewModel */,
-				094C0D032A566F6500E06FD8 /* Info.plist */,
 				094C0D002A566EA400E06FD8 /* Extensions */,
 				094C0CF42A562E4600E06FD8 /* Custom Elements */,
 				09C420A52A5624E9007624FA /* Views */,
@@ -104,6 +150,7 @@
 				09C420952A561AF5007624FA /* ADateApp.swift */,
 				094C0CFC2A566C5300E06FD8 /* GoogleService-Info.plist */,
 				09C420992A561AF6007624FA /* Assets.xcassets */,
+				094C0D032A566F6500E06FD8 /* Info.plist */,
 				09C4209B2A561AF6007624FA /* Preview Content */,
 			);
 			path = ADate;
@@ -160,6 +207,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		092ABAE42A5697AD008A7A92 /* ADateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 092ABAED2A5697AD008A7A92 /* Build configuration list for PBXNativeTarget "ADateTests" */;
+			buildPhases = (
+				092ABAE12A5697AD008A7A92 /* Sources */,
+				092ABAE22A5697AD008A7A92 /* Frameworks */,
+				092ABAE32A5697AD008A7A92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				092ABAEA2A5697AD008A7A92 /* PBXTargetDependency */,
+			);
+			name = ADateTests;
+			productName = ADateTests;
+			productReference = 092ABAE52A5697AD008A7A92 /* ADateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		09C420912A561AF5007624FA /* ADate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09C420A02A561AF6007624FA /* Build configuration list for PBXNativeTarget "ADate" */;
@@ -192,6 +257,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					092ABAE42A5697AD008A7A92 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 09C420912A561AF5007624FA;
+					};
 					09C420912A561AF5007624FA = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -214,11 +283,19 @@
 			projectRoot = "";
 			targets = (
 				09C420912A561AF5007624FA /* ADate */,
+				092ABAE42A5697AD008A7A92 /* ADateTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		092ABAE32A5697AD008A7A92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		09C420902A561AF5007624FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,19 +351,74 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		092ABAE12A5697AD008A7A92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				092ABAE82A5697AD008A7A92 /* ADateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		09C4208E2A561AF5007624FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				09C420982A561AF5007624FA /* ContentView.swift in Sources */,
 				094C0CFF2A566CB900E06FD8 /* LoginView.swift in Sources */,
+				092ABAF42A577AEE008A7A92 /* FloatTextFieldView.swift in Sources */,
+				092ABAF22A577970008A7A92 /* ButtonView.swift in Sources */,
 				09C420962A561AF5007624FA /* ADateApp.swift in Sources */,
+				092ABAEF2A577877008A7A92 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		092ABAEA2A5697AD008A7A92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09C420912A561AF5007624FA /* ADate */;
+			targetProxy = 092ABAE92A5697AD008A7A92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		092ABAEB2A5697AD008A7A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AZD7B5TZYA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pruebas.ADateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ADate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ADate";
+			};
+			name = Debug;
+		};
+		092ABAEC2A5697AD008A7A92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AZD7B5TZYA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pruebas.ADateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ADate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ADate";
+			};
+			name = Release;
+		};
 		09C4209E2A561AF6007624FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -464,6 +596,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		092ABAED2A5697AD008A7A92 /* Build configuration list for PBXNativeTarget "ADateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				092ABAEB2A5697AD008A7A92 /* Debug */,
+				092ABAEC2A5697AD008A7A92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		09C4208D2A561AF5007624FA /* Build configuration list for PBXProject "ADate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
