@@ -18,7 +18,7 @@ struct LoginView: View {
         
         ZStack{
             Color("Background")
-            VStack(spacing:20) {
+            VStack(spacing:0) {
                 // MARK: Header
                 ZStack {
                     Image("Background")
@@ -31,7 +31,7 @@ struct LoginView: View {
                                 .clipShape(Circle())
                                 .frame(width: 160)
                                 .offset(y:130)
-                                .shadow(color: Color.black.opacity(0.25), radius: 10)
+                                .shadow(color: Color.primary.opacity(0.25), radius: 10)
                         )
                 }//: ZSTACK
                 .edgesIgnoringSafeArea(.all)
@@ -41,20 +41,12 @@ struct LoginView: View {
                 VStack(alignment:.center){
                     Text("Iniciar sesión")
                         .font(.system(.title2))
-                        .padding(.top,20)
+                        .padding(.bottom,20)
                     FloatTextFieldView(placeHolder: "ejemplo@ejemplo.com",
                                        text: $email,
                                        title: "Correo electronico",
                                        errorMsg: nil)
-                    .padding()
-                    
-                    //                    FloatingLabelTextField($email, placeholder: "ejemplo@ejemplo.com", editingChanged: { (isChanged) in
-                    //
-                    //                           }) {
-                    //
-                    //                           }
-                    //                           .padding(.leading,30)
-                    //                           .padding(.trailing,30)
+                    .padding(.horizontal,15)
                     
                     ZStack(alignment:.trailing){
                         FloatTextFieldView(placeHolder: "contraseña",
@@ -62,29 +54,27 @@ struct LoginView: View {
                                            title: "Contraseña",
                                            errorMsg: nil)
                         .padding()
-//                        FloatingLabelTextField($password,placeholder: "Contraseña")
-//                            .isSecureTextEntry(isHidePassword)
-//                            .padding(.leading,30)
-//                            .padding(.trailing,30)
                         
                         Image(systemName: isHidePassword ? "eye.slash.fill":"eye.fill")
                             .font(.system(.caption))
                             .scaledToFill()
-                            .foregroundColor(.black)
+                            .foregroundColor(.primary)
                             .padding(.trailing,80)
-                            .offset(y:0)
                             .onTapGesture {
                                 isHidePassword.toggle()
                             }
                             .frame(width: 10, height: 10)
                     }//: ZSTACK
+
                     Button(action:{
                         
                     }){
                         Text("¿Contraseña olvidada?")
                             .font(.system(size: 14))
                             .foregroundColor(Color("SecondaryText"))
-                    }.padding(.leading,180)
+                    }
+                    .padding(.leading,200)
+                    .padding(.bottom,30)
                 }//: VSTACK
                 .padding(.top, 60.0)
                 // MARK: Footer
@@ -120,14 +110,14 @@ struct LoginView: View {
                                 )
                                 .frame(width:70)
                             Text("Iniciar Sesion")
-                                .foregroundColor(.black)
+                                .foregroundColor(.primary)
                                 .font(.title3)
                                 .frame(width: 240,height: 20)
                                 .padding()
                                 .padding(.leading,-60)
                             
                         }.overlay(
-                            RoundedRectangle(cornerRadius: 20).stroke( Color.black,lineWidth:1)
+                            RoundedRectangle(cornerRadius: 20).stroke( Color.primary,lineWidth:1)
                         )
                     }
                     

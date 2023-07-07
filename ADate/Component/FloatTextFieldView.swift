@@ -19,6 +19,7 @@ struct FloatTextFieldView: View {
     private let title: String
     private let errorMsg: String
     
+    // MARK: INJECTIONS
     // MARK: EVENTS
     
     public init(placeHolder: String,
@@ -41,7 +42,7 @@ struct FloatTextFieldView: View {
     }
     
     var validColor : Color {
-        isValid ? Color.secondary : Color.red
+        isValid ? Color.primary : Color.red
     }
     
     var body: some View {
@@ -62,7 +63,7 @@ struct FloatTextFieldView: View {
                 .stroke(validColor)
                 .frame(height: textFieldHeight))
             .foregroundColor(Color.primary)
-            .accentColor(Color.secondary)
+            .accentColor(Color.primary)
             .animation(.linear)
             
             
@@ -98,20 +99,18 @@ struct FloatTextFieldView: View {
                         trailing: 0
                     )
                 )
+        }//: ZSTACK
+        .overlay(
             Text(errorMsg)
-                .font(.system(.caption))
+                .font(.system(.body))
                 .foregroundColor(Color.red)
-                .padding(.leading, 4)
+                .padding(.leading, 8)
                 .padding(
-                    EdgeInsets(
-                        top: 70,
-                        leading: 5,
-                        bottom: 0,
-                        trailing: 0
-                    )
+                    .top, 70
                 )
                 .opacity(isValid ? 0 : 1)
-        }
+            ,alignment: .leading
+        )
     }
     
 }
@@ -121,7 +120,7 @@ struct demo: View {
     var body: some View {
         VStack {
             FloatTextFieldView(placeHolder: "ejemplo@ejemplo.com", text: $name, title: "Prueba", errorMsg: nil)
-        }.padding()
+        }
     }
 }
 
